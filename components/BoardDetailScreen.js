@@ -1,17 +1,18 @@
 import React, { Component } from 'react';
 import { Button, View, Text } from 'react-native';
 
-class EditBoardScreen extends Component {
+class BoardDetailScreen extends Component {
   static navigationOptions = {
-    title: 'Edit Board'
+    title: 'Board Details'
   };
+
   render() {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-        <Text>Add Board</Text>
+        <Text>Board Details</Text>
         <Button
-          title="Go to Edit Board... again"
-          onPress={() => this.props.navigation.push('EditBoard')}
+          title="Go to Details... again"
+          onPress={() => this.props.navigation.push('BoardDetails')}
         />
         <Button
           title="Go to Home"
@@ -26,4 +27,4 @@ class EditBoardScreen extends Component {
   }
 }
 
-export default EditBoardScreen;
+export default BoardDetailScreen;

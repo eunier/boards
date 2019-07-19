@@ -10,9 +10,18 @@ class EditBoardScreen extends Component {
     return (
       <View style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
         <Text>Add Board</Text>
-        <Button title="Go to Edit Board... again" />
-        <Button title="Go to Home" />
-        <Button title="Go back" />
+        <Button
+          title="Go to Edit Board... again"
+          onPress={() => this.props.navigation.push('EditBoard')}
+        />
+        <Button
+          title="Go to Home"
+          onPress={() => this.props.navigation.navigate('Board')}
+        />
+        <Button
+          title="Go back"
+          onPress={() => this.props.navigation.goBack()}
+        />
       </View>
     );
   }

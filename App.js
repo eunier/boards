@@ -1,6 +1,7 @@
 import React from 'react';
 import { StyleSheet, Text, View } from 'react-native';
 import { createStackNavigator, createAppContainer } from 'react-navigation';
+
 import BoardScreen from './components/BoardScreen';
 import BoardDetailScreen from './components/BoardDetailScreen';
 import AddBoardScreen from './components/AddBoardScreen';
